@@ -1,8 +1,8 @@
 def make_ordered_list(n):
-    list = []
+    my_list = []
     for i in range(n+1):
-        list.append(i)
-    return list
+        my_list.append(i)
+    return my_list
 
-result = make_ordered_list(10)
+result = make_ordered_list(18)
 print(result)
