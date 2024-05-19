@@ -3,6 +3,11 @@ class Coordinate(object):
         self.x = x
         self.y = y
 
+    def distance(self, other):
+        x_diff_sq = (self.x-other.x)**2
+        y_diff_sq = (self.y-other.y)**0.5
+        return (x_diff_sq + y_diff_sq)**0.5
+
 
 c = Coordinate(3,4)
 origin = Coordinate(0,0)
